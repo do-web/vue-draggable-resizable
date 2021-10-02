@@ -780,7 +780,7 @@ export default {
   computed: {
     style () {
       return {
-        transform: `translate(${this.left}px, ${this.top}px)`,
+        transform: `translate(${this.left}px, ${this.axis !== 'x' ? this.top : 0}px)`,
         width: this.computedWidth,
         height: this.computedHeight,
         zIndex: this.zIndex,
